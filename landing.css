@@ -161,17 +161,30 @@ nav {
   text-align: center;
 }
 
+.table-crypto {
+  overflow-x:auto;
+}
+
 @media (max-width: 750px) {
+  .table-crypto {
+    font-size: 12px;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    width: 93%;
+  }
+
   .hero__terminal {
     width: 100%;
   }
   .tab__container > ul {
-    right: auto;
+    position: relative;
+    top: 0;
     left: 0;
-    padding-left: 0;
   }
   .tab__container .code {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
   .feature, .keybinding, .changelog__item {
     flex-direction: column;
